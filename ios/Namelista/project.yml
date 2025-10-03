@@ -1,0 +1,26 @@
+name: Namelista
+options:
+  createIntermediateGroups: true
+targets:
+  Namelista:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: .
+        excludes:
+          - project.yml
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.Namelista
+        SWIFT_VERSION: 5.0
+    info:
+      path: Info.plist
+      properties:
+        CFBundleName: Namelista
+        CFBundleIdentifier: $(PRODUCT_BUNDLE_IDENTIFIER)
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+
+
